@@ -2,75 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Rajdhani:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    /* Gaming Dark Theme - Clash Royale Inspired */
-    --background: 222 47% 6%;
-    --foreground: 45 100% 96%;
+    /* Cyberpunk Dark Theme */
+    --background: 240 20% 4%;
+    --foreground: 180 100% 95%;
 
-    --card: 222 47% 10%;
-    --card-foreground: 45 100% 96%;
+    --card: 240 20% 8%;
+    --card-foreground: 180 100% 95%;
 
-    --popover: 222 47% 10%;
-    --popover-foreground: 45 100% 96%;
+    --popover: 240 20% 8%;
+    --popover-foreground: 180 100% 95%;
 
-    --primary: 45 100% 50%;
-    --primary-foreground: 222 47% 6%;
+    --primary: 180 100% 50%;
+    --primary-foreground: 240 20% 4%;
 
-    --secondary: 217 91% 60%;
-    --secondary-foreground: 45 100% 96%;
+    --secondary: 320 100% 60%;
+    --secondary-foreground: 180 100% 95%;
 
-    --muted: 222 30% 18%;
+    --muted: 240 15% 15%;
     --muted-foreground: 220 20% 65%;
 
     --accent: 280 100% 65%;
-    --accent-foreground: 45 100% 96%;
+    --accent-foreground: 180 100% 95%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 45 100% 96%;
+    --destructive-foreground: 180 100% 95%;
 
-    --border: 222 30% 20%;
-    --input: 222 30% 18%;
-    --ring: 45 100% 50%;
+    --border: 240 20% 18%;
+    --input: 240 15% 15%;
+    --ring: 180 100% 50%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Custom Gaming Colors */
-    --gold: 45 100% 50%;
-    --gold-light: 45 100% 70%;
-    --royal-blue: 217 91% 60%;
-    --royal-blue-dark: 217 91% 40%;
-    --epic-purple: 280 100% 65%;
-    --legendary-gold: 38 100% 55%;
-    --rare-blue: 200 100% 50%;
-    --common-gray: 220 10% 50%;
+    /* Custom Cyberpunk Colors */
+    --cyber-cyan: 180 100% 50%;
+    --cyber-cyan-dark: 180 100% 35%;
+    --neon-pink: 320 100% 60%;
+    --neon-pink-dark: 320 100% 45%;
+    --neon-purple: 280 100% 65%;
+    --matrix-green: 120 100% 45%;
+    --crypto-gold: 45 100% 55%;
+    --terminal-blue: 200 100% 50%;
+    --deep-space: 240 30% 8%;
     
     /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(45 100% 50%), hsl(38 100% 40%));
-    --gradient-royal: linear-gradient(135deg, hsl(217 91% 60%), hsl(280 100% 65%));
-    --gradient-card: linear-gradient(180deg, hsl(222 47% 12%), hsl(222 47% 8%));
-    --gradient-glow: radial-gradient(ellipse at center, hsl(45 100% 50% / 0.15), transparent 70%);
+    --gradient-cyber: linear-gradient(135deg, hsl(180 100% 50%), hsl(320 100% 60%));
+    --gradient-neon: linear-gradient(135deg, hsl(320 100% 60%), hsl(280 100% 65%));
+    --gradient-card: linear-gradient(180deg, hsl(240 20% 10%), hsl(240 20% 6%));
+    --gradient-glow: radial-gradient(ellipse at center, hsl(180 100% 50% / 0.15), transparent 70%);
     
     /* Shadows */
-    --shadow-gold: 0 0 30px hsl(45 100% 50% / 0.3);
-    --shadow-blue: 0 0 30px hsl(217 91% 60% / 0.3);
-    --shadow-card: 0 10px 40px hsl(0 0% 0% / 0.5);
+    --shadow-cyan: 0 0 30px hsl(180 100% 50% / 0.4);
+    --shadow-pink: 0 0 30px hsl(320 100% 60% / 0.4);
+    --shadow-card: 0 10px 40px hsl(0 0% 0% / 0.6);
 
-    --sidebar-background: 222 47% 8%;
-    --sidebar-foreground: 45 100% 96%;
-    --sidebar-primary: 45 100% 50%;
-    --sidebar-primary-foreground: 222 47% 6%;
-    --sidebar-accent: 217 91% 60%;
-    --sidebar-accent-foreground: 45 100% 96%;
-    --sidebar-border: 222 30% 20%;
-    --sidebar-ring: 45 100% 50%;
+    --sidebar-background: 240 20% 6%;
+    --sidebar-foreground: 180 100% 95%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 240 20% 4%;
+    --sidebar-accent: 320 100% 60%;
+    --sidebar-accent-foreground: 180 100% 95%;
+    --sidebar-border: 240 20% 18%;
+    --sidebar-ring: 180 100% 50%;
   }
 
   .dark {
-    --background: 222 47% 6%;
-    --foreground: 45 100% 96%;
+    --background: 240 20% 4%;
+    --foreground: 180 100% 95%;
   }
 }
 
@@ -90,28 +91,28 @@
 }
 
 @layer components {
-  .game-card {
-    @apply relative bg-card rounded-xl border-2 border-border overflow-hidden;
+  .cyber-card {
+    @apply relative bg-card rounded-lg border border-border overflow-hidden;
     background: var(--gradient-card);
     box-shadow: var(--shadow-card);
   }
 
-  .game-card::before {
+  .cyber-card::before {
     content: '';
     @apply absolute inset-0 opacity-0 transition-opacity duration-300;
     background: var(--gradient-glow);
   }
 
-  .game-card:hover::before {
+  .cyber-card:hover::before {
     @apply opacity-100;
   }
 
-  .gold-glow {
-    text-shadow: 0 0 20px hsl(var(--gold) / 0.5);
+  .cyan-glow {
+    text-shadow: 0 0 20px hsl(var(--cyber-cyan) / 0.6);
   }
 
-  .blue-glow {
-    text-shadow: 0 0 20px hsl(var(--royal-blue) / 0.5);
+  .pink-glow {
+    text-shadow: 0 0 20px hsl(var(--neon-pink) / 0.6);
   }
 
   .card-shine {
@@ -119,44 +120,62 @@
     background: linear-gradient(
       105deg,
       transparent 40%,
-      hsl(45 100% 90% / 0.1) 45%,
-      hsl(45 100% 90% / 0.2) 50%,
-      hsl(45 100% 90% / 0.1) 55%,
+      hsl(180 100% 90% / 0.1) 45%,
+      hsl(180 100% 90% / 0.2) 50%,
+      hsl(180 100% 90% / 0.1) 55%,
       transparent 60%
     );
   }
 
-  .game-card:hover .card-shine {
+  .cyber-card:hover .card-shine {
     @apply opacity-100;
     animation: shine 0.8s ease-in-out;
   }
 
   .skill-orb {
     @apply relative w-20 h-20 rounded-full flex items-center justify-center;
-    background: var(--gradient-royal);
-    box-shadow: var(--shadow-blue), inset 0 2px 10px hsl(0 0% 100% / 0.2);
+    background: var(--gradient-cyber);
+    box-shadow: var(--shadow-cyan), inset 0 2px 10px hsl(0 0% 100% / 0.2);
   }
 
-  .badge-legendary {
+  .badge-cyber {
     @apply relative px-4 py-2 rounded-lg font-semibold;
-    background: var(--gradient-gold);
-    box-shadow: var(--shadow-gold);
+    background: var(--gradient-cyber);
+    box-shadow: var(--shadow-cyan);
+  }
+
+  /* Scanline effect */
+  .scanlines::after {
+    content: '';
+    @apply absolute inset-0 pointer-events-none;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      hsl(0 0% 0% / 0.03) 2px,
+      hsl(0 0% 0% / 0.03) 4px
+    );
+  }
+
+  /* Glitch effect */
+  .glitch {
+    animation: glitch 2s infinite;
   }
 }
 
 @layer utilities {
-  .text-gradient-gold {
+  .text-gradient-cyber {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(45 100% 60%), hsl(38 100% 45%));
+    background-image: linear-gradient(135deg, hsl(180 100% 60%), hsl(180 100% 40%));
   }
 
-  .text-gradient-royal {
+  .text-gradient-neon {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(217 91% 70%), hsl(280 100% 70%));
+    background-image: linear-gradient(135deg, hsl(320 100% 70%), hsl(280 100% 70%));
   }
 
-  .border-gradient-gold {
-    border-image: var(--gradient-gold) 1;
+  .border-gradient-cyber {
+    border-image: var(--gradient-cyber) 1;
   }
 }
 
@@ -171,12 +190,27 @@
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px hsl(45 100% 50% / 0.3); }
-  50% { box-shadow: 0 0 40px hsl(45 100% 50% / 0.6); }
+  0%, 100% { box-shadow: 0 0 20px hsl(180 100% 50% / 0.3); }
+  50% { box-shadow: 0 0 40px hsl(180 100% 50% / 0.6); }
 }
 
 @keyframes gradient-shift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+@keyframes glitch {
+  0%, 90%, 100% { transform: translate(0); }
+  92% { transform: translate(-2px, 1px); }
+  94% { transform: translate(2px, -1px); }
+  96% { transform: translate(-1px, 2px); }
+  98% { transform: translate(1px, -2px); }
+}
+
+@keyframes matrix-rain {
+  0% { transform: translateY(-100%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
 }

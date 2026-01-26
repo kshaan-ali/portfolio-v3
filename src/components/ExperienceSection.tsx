@@ -1,4 +1,4 @@
-import { Briefcase, Calendar, MapPin, ExternalLink } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
@@ -12,7 +12,7 @@ const experiences = [
       "Led security audit preparation",
       "Mentored team of 5 developers",
     ],
-    type: "legendary",
+    tier: "master",
   },
   {
     title: "Full Stack Web3 Developer",
@@ -25,7 +25,7 @@ const experiences = [
       "Implemented lazy minting feature",
       "Built real-time bidding system",
     ],
-    type: "epic",
+    tier: "expert",
   },
   {
     title: "Blockchain Developer",
@@ -38,7 +38,7 @@ const experiences = [
       "Built token vesting system",
       "Created staking rewards platform",
     ],
-    type: "rare",
+    tier: "advanced",
   },
   {
     title: "Junior Full Stack Developer",
@@ -51,26 +51,26 @@ const experiences = [
       "Learned Solidity fundamentals",
       "First smart contract deployment",
     ],
-    type: "common",
+    tier: "core",
   },
 ];
 
-const typeStyles = {
-  legendary: {
+const tierStyles = {
+  master: {
     border: "border-l-primary",
-    dot: "bg-primary shadow-[0_0_10px_hsl(45_100%_50%)]",
+    dot: "bg-primary shadow-[0_0_10px_hsl(180_100%_50%)]",
   },
-  epic: {
-    border: "border-l-epic",
-    dot: "bg-epic shadow-[0_0_10px_hsl(280_100%_65%)]",
+  expert: {
+    border: "border-l-neon-purple",
+    dot: "bg-neon-purple shadow-[0_0_10px_hsl(280_100%_65%)]",
   },
-  rare: {
-    border: "border-l-rare",
-    dot: "bg-rare shadow-[0_0_10px_hsl(200_100%_50%)]",
+  advanced: {
+    border: "border-l-matrix",
+    dot: "bg-matrix shadow-[0_0_10px_hsl(120_100%_45%)]",
   },
-  common: {
-    border: "border-l-common",
-    dot: "bg-common",
+  core: {
+    border: "border-l-terminal",
+    dot: "bg-terminal",
   },
 };
 
@@ -81,18 +81,18 @@ export const ExperienceSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-foreground">Battle</span>{" "}
-            <span className="text-gradient-royal">History</span>
+            <span className="text-foreground">Work</span>{" "}
+            <span className="text-gradient-neon">Experience</span>
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            A chronicle of my journey through the realms of technology and blockchain
+            A chronicle of building decentralized systems and Web3 applications
           </p>
         </div>
 
         {/* Timeline */}
         <div className="max-w-4xl mx-auto">
           {experiences.map((exp, index) => {
-            const styles = typeStyles[exp.type as keyof typeof typeStyles];
+            const styles = tierStyles[exp.tier as keyof typeof tierStyles];
             return (
               <div key={index} className="relative pl-8 pb-12 last:pb-0">
                 {/* Timeline Line */}
@@ -104,7 +104,7 @@ export const ExperienceSection = () => {
                 <div className={`absolute left-0 top-1.5 w-6 h-6 rounded-full ${styles.dot} border-4 border-background`} />
 
                 {/* Content Card */}
-                <div className={`game-card p-6 border-l-4 ${styles.border} ml-4`}>
+                <div className={`cyber-card p-6 border-l-4 ${styles.border} ml-4`}>
                   <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
                     <div>
                       <h3 className="font-display text-xl font-bold text-foreground">{exp.title}</h3>

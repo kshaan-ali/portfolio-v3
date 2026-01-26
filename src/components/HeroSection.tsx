@@ -1,4 +1,4 @@
-import { Crown, Sparkles, ChevronDown } from "lucide-react";
+import { Terminal, Zap, ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 
@@ -10,15 +10,15 @@ export const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
       </div>
 
-      {/* Floating Particles Effect */}
+      {/* Matrix Rain Effect */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(20)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-1 h-1 bg-primary rounded-full opacity-60 animate-float"
+            className="absolute w-0.5 h-8 bg-gradient-to-b from-primary to-transparent opacity-40 animate-float"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -31,11 +31,11 @@ export const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
-        {/* Title Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted/50 border border-border mb-8 animate-fade-in">
-          <Sparkles className="w-4 h-4 text-primary" />
+        {/* Status Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted/50 border border-primary/30 mb-8 animate-fade-in">
+          <Zap className="w-4 h-4 text-primary" />
           <span className="text-sm font-body font-semibold text-muted-foreground">
-            Legendary Developer Available
+            System Online • Ready for Deployment
           </span>
         </div>
 
@@ -43,22 +43,22 @@ export const HeroSection = () => {
         <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
           <span className="text-foreground">Blockchain</span>
           <br />
-          <span className="text-gradient-gold gold-glow">Full Stack</span>
+          <span className="text-gradient-cyber cyan-glow">Full Stack</span>
           <br />
-          <span className="text-gradient-royal blue-glow">Developer</span>
+          <span className="text-gradient-neon pink-glow">Developer</span>
         </h1>
 
         {/* Subtitle */}
         <p className="font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          Crafting decentralized experiences with legendary code. 
-          Smart contracts, DApps, and full-stack solutions for the Web3 revolution.
+          Building the decentralized future with cutting-edge code. 
+          Smart contracts, DApps, and Web3 solutions engineered for the next era.
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-          <Button variant="legendary" size="xl" className="animate-pulse-glow">
-            <Crown className="w-5 h-5" />
-            View My Arsenal
+          <Button variant="cyber" size="xl" className="animate-pulse-glow">
+            <Terminal className="w-5 h-5" />
+            View My Stack
           </Button>
           <Button variant="outline" size="xl">
             Download Resume
@@ -73,7 +73,7 @@ export const HeroSection = () => {
             { value: "10+", label: "Certifications" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="font-display text-3xl md:text-4xl font-bold text-gradient-gold">{stat.value}</div>
+              <div className="font-display text-3xl md:text-4xl font-bold text-gradient-cyber">{stat.value}</div>
               <div className="font-body text-sm text-muted-foreground uppercase tracking-wider">{stat.label}</div>
             </div>
           ))}

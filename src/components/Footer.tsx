@@ -1,4 +1,4 @@
-import { Gamepad2 } from "lucide-react";
+import { Cpu } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -7,13 +7,13 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <Gamepad2 className="w-6 h-6 text-primary" />
-            <span className="font-display text-lg font-bold text-gradient-gold">BlockChain Dev</span>
+            <Cpu className="w-6 h-6 text-primary" />
+            <span className="font-display text-lg font-bold text-gradient-cyber">CryptoDev</span>
           </div>
 
           {/* Copyright */}
           <p className="font-body text-sm text-muted-foreground text-center">
-            © {new Date().getFullYear()} All rights reserved. Built with legendary code.
+            © {new Date().getFullYear()} All rights reserved. Built on the blockchain.
           </p>
 
           {/* Quick Links */}
