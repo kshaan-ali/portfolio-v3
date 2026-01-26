@@ -60,9 +60,9 @@ export const HeroSection = () => {
             <Terminal className="w-5 h-5" />
             View My Stack
           </Button>
-          <Button variant="outline" size="xl">
+          {/* <Button variant="outline" size="xl">
             Download Resume
-          </Button>
+          </Button> */}
         </div>
 
         {/* Stats */}
