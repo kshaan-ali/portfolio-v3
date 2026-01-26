@@ -8,12 +8,12 @@ export const Footer = () => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <Cpu className="w-6 h-6 text-primary" />
-            <span className="font-display text-lg font-bold text-gradient-cyber">CryptoDev</span>
+            <span className="font-display text-lg font-bold text-gradient-cyber">Shaan Ali Khan</span>
           </div>
 
           {/* Copyright */}
           <p className="font-body text-sm text-muted-foreground text-center">
-            © {new Date().getFullYear()} All rights reserved. Built on the blockchain.
+            © {new Date().getFullYear()} All rights reserved. Built by Shaan Ali Khan.
           </p>
 
           {/* Quick Links */}

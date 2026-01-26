@@ -2,47 +2,47 @@ import { Award, ExternalLink, CheckCircle2 } from "lucide-react";
 
 const certifications = [
   {
-    name: "Certified Blockchain Developer",
-    issuer: "Blockchain Council",
-    year: "2023",
+    name: "Ethereum : Dapp Development Bootcamp",
+    issuer: "Udemy",
+    year: "2024",
     tier: "master",
-    credentialId: "BC-2023-4521",
+    credentialId: "UC-0ebbf8b8-c84f-4c4d-b80d-9146ae33337a",
   },
   {
-    name: "Ethereum Developer Certification",
-    issuer: "ConsenSys Academy",
-    year: "2023",
+    name: "0-100 Full Stack Web Development Course",
+    issuer: "100xDevs",
+    year: "2024",
     tier: "master",
-    credentialId: "CS-ETH-8834",
+    credentialId: "KC21ZIYY",
   },
-  {
-    name: "Smart Contract Security Auditor",
-    issuer: "OpenZeppelin",
-    year: "2022",
-    tier: "expert",
-    credentialId: "OZ-SEC-1122",
-  },
-  {
-    name: "Solidity Professional Certificate",
-    issuer: "Alchemy University",
-    year: "2022",
-    tier: "expert",
-    credentialId: "AU-SOL-5567",
-  },
-  {
-    name: "AWS Certified Developer",
-    issuer: "Amazon Web Services",
-    year: "2021",
-    tier: "advanced",
-    credentialId: "AWS-DEV-9901",
-  },
-  {
-    name: "Full Stack Web Development",
-    issuer: "Meta",
-    year: "2021",
-    tier: "advanced",
-    credentialId: "META-FS-3344",
-  },
+  // {
+  //   name: "Smart Contract Security Auditor",
+  //   issuer: "OpenZeppelin",
+  //   year: "2022",
+  //   tier: "expert",
+  //   credentialId: "OZ-SEC-1122",
+  // },
+  // {
+  //   name: "Solidity Professional Certificate",
+  //   issuer: "Alchemy University",
+  //   year: "2022",
+  //   tier: "expert",
+  //   credentialId: "AU-SOL-5567",
+  // },
+  // {
+  //   name: "AWS Certified Developer",
+  //   issuer: "Amazon Web Services",
+  //   year: "2021",
+  //   tier: "advanced",
+  //   credentialId: "AWS-DEV-9901",
+  // },
+  // {
+  //   name: "Full Stack Web Development",
+  //   issuer: "Meta",
+  //   year: "2021",
+  //   tier: "advanced",
+  //   credentialId: "META-FS-3344",
+  // },
 ];
 
 const tierStyles = {

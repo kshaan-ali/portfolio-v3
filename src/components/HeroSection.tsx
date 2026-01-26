@@ -35,7 +35,7 @@ export const HeroSection = () => {
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted/50 border border-primary/30 mb-8 animate-fade-in">
           <Zap className="w-4 h-4 text-primary" />
           <span className="text-sm font-body font-semibold text-muted-foreground">
-            System Online • Ready for Deployment
+            
           </span>
         </div>
 
@@ -66,11 +66,11 @@ export const HeroSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-3 gap-8 max-w-xl mx-auto mt-16 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+        <div className="grid grid-cols-2 gap-8 max-w-xl mx-auto mt-16 animate-fade-in" style={{ animationDelay: "0.4s" }}>
           {[
-            { value: "5+", label: "Years XP" },
-            { value: "50+", label: "Projects" },
-            { value: "10+", label: "Certifications" },
+            { value: "1+", label: "Years XP" },
+            { value: "10+", label: "Projects" },
+            
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="font-display text-3xl md:text-4xl font-bold text-gradient-cyber">{stat.value}</div>

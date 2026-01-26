@@ -24,7 +24,7 @@ export const Navbar = () => {
               <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
             <span className="font-display text-lg font-bold text-gradient-cyber">
-              CryptoDev
+              Shaan Ali Khan
             </span>
           </a>
 
@@ -40,10 +40,10 @@ export const Navbar = () => {
                 <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
-            <Button variant="cyber" size="sm" className="ml-4">
+            {/* <Button variant="cyber" size="sm" className="ml-4">
               <Terminal className="w-4 h-4" />
               Hire Me
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -69,10 +69,10 @@ export const Navbar = () => {
               </a>
             ))}
             <div className="px-4 pt-4">
-              <Button variant="cyber" className="w-full">
+              {/* <Button variant="cyber" className="w-full">
                 <Terminal className="w-4 h-4" />
                 Hire Me
-              </Button>
+              </Button> */}
             </div>
           </div>
         )}

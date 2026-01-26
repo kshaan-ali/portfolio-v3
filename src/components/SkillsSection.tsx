@@ -25,8 +25,8 @@ const skills = [
   {
     icon: Wallet,
     name: "Web3.js / Ethers",
-    level: 92,
-    tier: "master" as const,
+    level: 90,
+    tier: "expert" as const,
     description: "Blockchain integration, wallet connectivity, transaction handling",
   },
   {
@@ -66,10 +66,10 @@ const skills = [
   },
   {
     icon: Layers,
-    name: "Layer 2 Solutions",
-    level: 80,
-    tier: "advanced" as const,
-    description: "Polygon, Arbitrum, Optimism integration",
+    name: "Websocket",
+    level: 75,
+    tier: "core" as const,
+    description: "Real-time communication, event-driven architectures",
   },
   {
     icon: Cpu,
@@ -85,13 +85,13 @@ const skills = [
     tier: "advanced" as const,
     description: "Decentralized storage, NFT metadata, content addressing",
   },
-  {
-    icon: Braces,
-    name: "GraphQL / The Graph",
-    level: 75,
-    tier: "advanced" as const,
-    description: "Subgraph development, blockchain data indexing",
-  },
+  // {
+  //   icon: Braces,
+  //   name: "GraphQL / The Graph",
+  //   level: 75,
+  //   tier: "advanced" as const,
+  //   description: "Subgraph development, blockchain data indexing",
+  // },
   {
     icon: GitBranch,
     name: "Git / CI/CD",

@@ -3,9 +3,9 @@ import { Button } from "./ui/button";
 import { useState } from "react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+  { icon: Github, href: "https://github.com/kshaan-ali", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/kshaaneali/", label: "LinkedIn" },
+  { icon: Twitter, href: "https://x.com/kshaaneali", label: "X" },
 ];
 
 export const ConnectSection = () => {
@@ -60,7 +60,7 @@ export const ConnectSection = () => {
                   type="text"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 rounded-lg bg-muted border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors font-body text-foreground"
+                  className="relative z-10 w-full px-4 py-3 rounded-lg bg-muted border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors font-body text-foreground"
                   placeholder="Enter your name"
                   required
                 />
@@ -74,7 +74,7 @@ export const ConnectSection = () => {
                   type="email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 rounded-lg bg-muted border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors font-body text-foreground"
+                  className=" relative z-10 w-full px-4 py-3 rounded-lg bg-muted border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors font-body text-foreground"
                   placeholder="your@email.com"
                   required
                 />
@@ -88,14 +88,14 @@ export const ConnectSection = () => {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   rows={4}
-                  className="w-full px-4 py-3 rounded-lg bg-muted border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors font-body text-foreground resize-none"
+                  className=" relative z-10 w-full px-4 py-3 rounded-lg bg-muted border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors font-body text-foreground resize-none"
                   placeholder="Tell me about your project..."
                   required
                 />
               </div>
 
-              <Button type="submit" variant="cyber" size="lg" className="w-full">
-                <Send className="w-4 h-4" />
+              <Button type="submit" variant="cyber" size="lg" className="relative z-10 w-full">
+                <Send className="relative z-10 w-4 h-4" />
                 Send Message
               </Button>
             </form>
@@ -112,10 +112,10 @@ export const ConnectSection = () => {
                 <div>
                   <h4 className="font-display text-lg font-bold text-foreground">Email Me</h4>
                   <a
-                    href="mailto:developer@blockchain.dev"
-                    className="font-body text-muted-foreground hover:text-primary transition-colors"
+                    href="mailto:kshaaneali@gmail.com"
+                    className="relative z-10 font-body text-muted-foreground hover:text-primary transition-colors"
                   >
-                    developer@blockchain.dev
+                    kshaaneali@gmail.com
                   </a>
                 </div>
               </div>
@@ -131,7 +131,7 @@ export const ConnectSection = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 rounded-lg bg-muted hover:bg-primary/20 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                    className="relative z-10 w-12 h-12 rounded-lg bg-muted hover:bg-primary/20 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
                     aria-label={social.label}
                   >
                     <social.icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />

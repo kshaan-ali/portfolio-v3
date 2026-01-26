@@ -1,17 +1,17 @@
 import { GraduationCap, BookOpen, Trophy } from "lucide-react";
 
 const qualifications = [
+  // {
+  //   degree: "Master of Science in Computer Science",
+  //   institution: "Stanford University",
+  //   year: "2019",
+  //   specialization: "Distributed Systems & Cryptography",
+  //   icon: GraduationCap,
+  // },
   {
-    degree: "Master of Science in Computer Science",
-    institution: "Stanford University",
-    year: "2019",
-    specialization: "Distributed Systems & Cryptography",
-    icon: GraduationCap,
-  },
-  {
-    degree: "Bachelor of Science in Software Engineering",
-    institution: "MIT",
-    year: "2017",
+    degree: "Bachelor of Computer Science",
+    institution: "University of Mumbai",
+    year: "2026",
     specialization: "Full Stack Development",
     icon: BookOpen,
   },
@@ -19,9 +19,9 @@ const qualifications = [
 
 const achievements = [
   "Published research on blockchain scalability",
-  "Dean's List - All semesters",
-  "Hackathon Winner - ETHGlobal 2022",
-  "Open source contributor - 500+ GitHub stars",
+  // "Dean's List - All semesters",
+  // "Hackathon Winner - ETHGlobal 2022",
+  // "Open source contributor - 500+ GitHub stars",
 ];
 
 export const QualificationsSection = () => {
