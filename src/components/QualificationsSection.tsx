@@ -31,11 +31,11 @@ export const QualificationsSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-foreground">Training</span>{" "}
-            <span className="text-gradient-royal">Grounds</span>
+            <span className="text-foreground">Academic</span>{" "}
+            <span className="text-gradient-neon">Background</span>
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            Academic foundations that forged my expertise in technology and blockchain
+            Educational foundations powering blockchain innovation
           </p>
         </div>
 
@@ -45,11 +45,11 @@ export const QualificationsSection = () => {
             {qualifications.map((qual, index) => (
               <div
                 key={index}
-                className="game-card p-6 border-2 border-royal/30 hover:border-royal transition-all duration-300 hover:shadow-[0_0_30px_hsl(217_91%_60%_/_0.2)]"
+                className="cyber-card p-6 border border-secondary/30 hover:border-secondary transition-all duration-300 hover:shadow-[0_0_30px_hsl(320_100%_60%_/_0.2)]"
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-royal/20 to-epic/20 flex items-center justify-center shrink-0">
-                    <qual.icon className="w-7 h-7 text-royal" />
+                  <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-secondary/20 to-neon-purple/20 flex items-center justify-center shrink-0">
+                    <qual.icon className="w-7 h-7 text-secondary" />
                   </div>
                   <div>
                     <h3 className="font-display text-lg font-bold text-foreground mb-1">
@@ -60,7 +60,7 @@ export const QualificationsSection = () => {
                       <span className="px-3 py-1 rounded-full bg-muted text-xs font-body font-semibold text-muted-foreground">
                         {qual.year}
                       </span>
-                      <span className="px-3 py-1 rounded-full bg-royal/20 text-xs font-body font-semibold text-royal">
+                      <span className="px-3 py-1 rounded-full bg-secondary/20 text-xs font-body font-semibold text-secondary">
                         {qual.specialization}
                       </span>
                     </div>
@@ -71,10 +71,10 @@ export const QualificationsSection = () => {
           </div>
 
           {/* Achievements */}
-          <div className="game-card p-8 border-2 border-primary/30">
+          <div className="cyber-card p-8 border border-primary/30">
             <div className="flex items-center gap-3 mb-6">
               <Trophy className="w-6 h-6 text-primary" />
-              <h3 className="font-display text-xl font-bold text-gradient-gold">Notable Achievements</h3>
+              <h3 className="font-display text-xl font-bold text-gradient-cyber">Notable Achievements</h3>
             </div>
             <div className="grid sm:grid-cols-2 gap-4">
               {achievements.map((achievement, index) => (

@@ -1,4 +1,4 @@
-import { Sword, Shield, Gamepad2, Menu, X } from "lucide-react";
+import { Terminal, Cpu, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 
@@ -20,11 +20,11 @@ export const Navbar = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
             <div className="relative">
-              <Gamepad2 className="w-8 h-8 text-primary transition-all duration-300 group-hover:text-gold-light" />
+              <Cpu className="w-8 h-8 text-primary transition-all duration-300 group-hover:text-cyber" />
               <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
-            <span className="font-display text-lg font-bold text-gradient-gold">
-              BlockChain Dev
+            <span className="font-display text-lg font-bold text-gradient-cyber">
+              CryptoDev
             </span>
           </a>
 
@@ -40,8 +40,8 @@ export const Navbar = () => {
                 <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
-            <Button variant="legendary" size="sm" className="ml-4">
-              <Sword className="w-4 h-4" />
+            <Button variant="cyber" size="sm" className="ml-4">
+              <Terminal className="w-4 h-4" />
               Hire Me
             </Button>
           </div>
@@ -69,8 +69,8 @@ export const Navbar = () => {
               </a>
             ))}
             <div className="px-4 pt-4">
-              <Button variant="legendary" className="w-full">
-                <Sword className="w-4 h-4" />
+              <Button variant="cyber" className="w-full">
+                <Terminal className="w-4 h-4" />
                 Hire Me
               </Button>
             </div>

@@ -15,9 +15,9 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-muted hover:text-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        legendary: "bg-gradient-to-r from-gold to-legendary text-primary-foreground shadow-lg hover:shadow-[0_0_30px_hsl(45_100%_50%_/_0.5)] hover:scale-105",
-        epic: "bg-gradient-to-r from-royal to-epic text-foreground shadow-lg hover:shadow-[0_0_30px_hsl(280_100%_65%_/_0.4)] hover:scale-105",
-        rare: "bg-rare text-foreground shadow-lg hover:shadow-[0_0_20px_hsl(200_100%_50%_/_0.4)] hover:scale-105",
+        cyber: "bg-gradient-to-r from-cyber to-cyber-dark text-primary-foreground shadow-lg hover:shadow-[0_0_30px_hsl(180_100%_50%_/_0.5)] hover:scale-105",
+        neon: "bg-gradient-to-r from-neon-pink to-neon-purple text-foreground shadow-lg hover:shadow-[0_0_30px_hsl(320_100%_60%_/_0.4)] hover:scale-105",
+        terminal: "bg-terminal text-foreground shadow-lg hover:shadow-[0_0_20px_hsl(200_100%_50%_/_0.4)] hover:scale-105",
       },
       size: {
         default: "h-10 px-6 py-2",

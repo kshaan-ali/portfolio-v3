@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["Cinzel", "serif"],
-        body: ["Rajdhani", "sans-serif"],
+        display: ["Orbitron", "sans-serif"],
+        body: ["Exo 2", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -51,18 +51,18 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        gold: {
-          DEFAULT: "hsl(var(--gold))",
-          light: "hsl(var(--gold-light))",
+        cyber: {
+          DEFAULT: "hsl(var(--cyber-cyan))",
+          dark: "hsl(var(--cyber-cyan-dark))",
         },
-        royal: {
-          DEFAULT: "hsl(var(--royal-blue))",
-          dark: "hsl(var(--royal-blue-dark))",
+        neon: {
+          pink: "hsl(var(--neon-pink))",
+          "pink-dark": "hsl(var(--neon-pink-dark))",
+          purple: "hsl(var(--neon-purple))",
         },
-        epic: "hsl(var(--epic-purple))",
-        legendary: "hsl(var(--legendary-gold))",
-        rare: "hsl(var(--rare-blue))",
-        common: "hsl(var(--common-gray))",
+        matrix: "hsl(var(--matrix-green))",
+        crypto: "hsl(var(--crypto-gold))",
+        terminal: "hsl(var(--terminal-blue))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -93,8 +93,8 @@ export default {
           "50%": { transform: "translateY(-10px)" },
         },
         "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 20px hsl(45 100% 50% / 0.3)" },
-          "50%": { boxShadow: "0 0 40px hsl(45 100% 50% / 0.6)" },
+          "0%, 100%": { boxShadow: "0 0 20px hsl(180 100% 50% / 0.3)" },
+          "50%": { boxShadow: "0 0 40px hsl(180 100% 50% / 0.6)" },
         },
         shimmer: {
           "0%": { backgroundPosition: "-200% 0" },
