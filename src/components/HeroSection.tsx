@@ -56,9 +56,11 @@ export const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-          <Button variant="cyber" size="xl" className="animate-pulse-glow">
-            <Terminal className="w-5 h-5" />
-            View My Stack
+          <Button variant="cyber" size="xl" className="animate-pulse-glow" >
+            <a  href="#skills" className="flex items-center gap-2">
+              <Terminal className="w-5 h-5" /> 
+              View My Stack
+            </a>
           </Button>
           {/* <Button variant="outline" size="xl">
             Download Resume

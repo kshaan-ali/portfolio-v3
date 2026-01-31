@@ -112,7 +112,7 @@ export const CertificationsSection = () => {
                   </div>
                   <div className="flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors">
                     <span className="font-body text-xs">{cert.credentialId}</span>
-                    <ExternalLink className="w-3 h-3" />
+                    {/* <ExternalLink className="w-3 h-3" /> */}
                   </div>
                 </div>
               </div>
